@@ -903,3 +903,9 @@ p{margin:0 0 16px;color:#d8e1ef}
   h1{font-size:30px}
 }
 
+/* Detailed APK/PWA guide */
+.apk-guide{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 20px}
+.apk-guide-card{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-xl);padding:24px;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025)),linear-gradient(145deg,rgba(17,28,51,.94),rgba(10,16,31,.94));box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.065)}
+.apk-guide-card::after{content:"";position:absolute;right:-70px;top:-70px;width:170px;height:170px;border-radius:999px;background:radial-gradient(circle,rgba(84,240,193,.15),transparent 68%);pointer-events:none}.apk-guide-card h2{padding-right:48px}.apk-symbol{position:absolute;right:18px;top:18px;display:grid;place-items:center;width:42px;height:42px;border-radius:16px;color:#06101d;background:linear-gradient(135deg,#5cf0c3,#6ee7f9 52%,#9a8cff);font-weight:1000;box-shadow:0 14px 28px rgba(84,240,193,.18)}.apk-guide-card ol,.apk-guide-card ul{margin:12px 0 0;padding-left:22px}.apk-guide-card li{margin:9px 0;color:#d8e1ef}.apk-feature{grid-column:1/-1}.apk-note{border-color:rgba(255,209,102,.22);background:linear-gradient(145deg,rgba(255,209,102,.10),rgba(17,28,51,.92))}.apk-seo ul{list-style:none;padding-left:0}.apk-seo li{position:relative;padding:10px 12px;margin:8px 0;border:1px solid rgba(226,232,240,.10);border-radius:14px;background:rgba(255,255,255,.035)}
+@media (max-width:760px){.apk-guide{grid-template-columns:1fr;gap:14px}.apk-guide-card{padding:18px;border-radius:22px}.apk-symbol{width:38px;height:38px;right:14px;top:14px}.apk-guide-card h2{padding-right:42px}}
+
